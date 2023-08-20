@@ -8,29 +8,63 @@
 ## 2 环境与配置
 ### 2.1 开发硬件环境  
 AMD Ryzen 5 3500U 2.10GHz 16.0GB内存
-### 2.2 运行软件环境  
-PC  
-### 2.3 操作系统  
+### 2.2 操作系统  
 Windows11家庭中文版  
-### 2.4 开发环境与工具  
+### 2.3 开发环境与工具  
 PyCharm Community Edition 2022.1.3;Qt Designer
-### 2.5 编程语言  
-python  
-# TextClassifier
-News text classification system is a system used to extract the subject of news text and classify each news text according to the corresponding subject.Text classification methods can be divided into single-label text classification and multi-label text classification. Currently, single-label text classification technology has been relatively mature. However, news texts contain complex and diversified information, and it is often incomplete to classify them with a single label. Thus, a news item can contain multiple categories, that is, multi-label text categories.
-## 1 Main functions:
-1.1 News data crawling  
-1.2 News text segmentation  
-1.3 News topic extraction  
-1.4 Categorize by label  
-## 2 Environment and configuration
-### 2.1 Development hardware environment
-AMD Ryzen 5 3500U 2.10GHz 16.0GB RAM  
-### 2.2 Running software environment
-PC  
-### 2.3 Operating system
-Windows11 Home Chinese version
-### 2.4 Development environment and tools
-PyCharm Community Edition 2022.1.3;Qt Designer  
-### 2.5 Programming language
-python
+## 3 系统使用说明
+本系统使用python语言开发，使用pyqt5程序包设计系统界面，利用MySQLWorkbench连接数据库，最后使用pyinstaller将程序打包。
+### 3.1 系统运行环境和配置
+表 18 运行配置与环境
+项目	详情
+开发硬件环境	AMD Ryzen 5 3500U 2.10GHz 16.0GB内存
+运行软件环境 	PC
+操作系统	Windows11家庭中文版
+开发环境与工具	PyCharm Community Edition 2022.1.3;Qt Designer
+编程语言	python
+
+### 3.2 系统操作说明
+#### 3.2.1 登录模块说明
+以下是登录注册模块截图，用户账号由8位数字组成，密码长度在8-16位字符，登录界面和账号注册界面右下角都有勾选框，用户可选择注册为普通用户或管理员，并且登录对应账号。
+ 
+图 34 登录界面
+ 
+图 35 注册界面
+### 3.2.2 新闻爬取模块说明
+新闻爬取模块大致分为两块，新闻的预爬取和正式爬取，用户（管理员）可选择爬取新闻的类别和爬取数量（最大默认为80条），点击“预爬取”按钮，程序开始获取新闻标题和各条新闻的url，接着点击“爬取”按钮，程序开始逐条爬取新闻，并计数爬取失败的条数，最后点击“保存到数据库”，若数据库已经保存了某条新闻，则相同的新闻不会二次入库，并提示保存失败条数。
+ ![新闻爬取](D:\捷径\课程作业\大三下作业\软件实训\图\截图\新闻爬取1.png)
+
+图 36新闻爬取（1）
+ 
+图 37 新闻爬取（2）
+ 
+图 38 新闻爬取（3）
+### 3.2.3 数据预处理模块说明
+数据预处理主要用于处理乱码数据和内容缺失数据，进入“数据预处理”界面，用户点击“刷新”按钮获取最新数据，用户可查看到各新闻标题以及新闻链接，选中列表中的新闻，点击“查看内容”按钮，可在左下角文本显示框中查看新闻内容，点击“词云”按钮，可对新闻文本生成词云，对于缺失数据，用户可在选中后点击“删除记录”按钮删除对应数据。
+ 
+图 39 数据预处理（1）
+ 
+图 40 数据预处理（2）
+### 3.2.4 新闻分类模块说明
+进入“文本分类”模块，用户点击“刷新”按钮，获取最新数据，点击“执行分类”按钮即可对新闻进行分类（程序已保存训练好的模型），点击“重置”按钮会将当前管理员管理的所有新闻分类信息重置，最后，若对分类有异议，可自行更改。
+ 
+图 41新闻分类（1）
+ 
+图 42 新闻分类（2）
+ 
+图 43 新闻分类（3）
+### 3.2.5 管理员个人中心模块说明
+管理员个人中心界面所显示的“贡献值”是管理员所管理的所有新闻的计数，左下的表格是对应类别的计数。点击“编辑个人信息”按钮即可跳转信息编辑界面，提供修改昵称和个人简介以及密码修改服务。点击“登出账号”将退出当前账号，跳转至登录界面。
+ 
+图 44 管理员个人中心
+ 
+图 45 编辑信息
+ 
+图 46 修改密码
+### 3.2.6 用户浏览模块说明
+通过登录用户账号，进入用户主页面，系统自动获取当前所有新闻数据（所有管理员管理的数据），用户可通过搜索和选择类别来选择新闻。选中对应新闻，点击“查看内容“，可在右边文本框显示新闻内容。
+ 
+图 47用户主页面（1）
+ 
+图 48 用户主页面（2）
+
