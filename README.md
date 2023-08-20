@@ -55,7 +55,7 @@ PyCharm Community Edition 2022.1.3;Qt Designer
 图 43 新闻分类（3）
 ### 3.2.5 管理员个人中心模块说明
 管理员个人中心界面所显示的“贡献值”是管理员所管理的所有新闻的计数，左下的表格是对应类别的计数。点击“编辑个人信息”按钮即可跳转信息编辑界面，提供修改昵称和个人简介以及密码修改服务。点击“登出账号”将退出当前账号，跳转至登录界面。
- 
+ ![](https://github.com/tomatoyou/TextClassifier/blob/main/%E5%9B%BE/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/%E4%B8%AA%E4%BA%BA%E6%8E%8C%E5%BF%83.png)
 图 44 管理员个人中心
  
 图 45 编辑信息
