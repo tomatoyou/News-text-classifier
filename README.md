@@ -1,4 +1,5 @@
-## 1 主要功能 
+# News-text-classifier
+## 1 目录
 ├─chart  
 │  ├─procedure chart：设计流图  
 │  └─screenshot：运行截图  
