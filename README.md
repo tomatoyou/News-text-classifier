@@ -1,8 +1,12 @@
 ## 1 主要功能 
-1.1新闻数据爬取  
-1.2新闻文本分词  
-1.3新闻主题提取  
-1.4按标签进行归类  
+├─chart  
+│  ├─procedure chart：设计流图  
+│  └─screenshot：运行截图  
+├─code  
+│  ├─databases  
+│  └─temp_and_file：软件运行时所需的文件以及输出文件  
+├─document：设计文档  
+└─references  
 ## 2 算法介绍
 ## 3 系统使用说明
 本系统使用python语言开发，使用pyqt5程序包设计系统界面，利用MySQLWorkbench连接数据库，最后使用pyinstaller将程序打包。
