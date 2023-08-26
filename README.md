@@ -10,10 +10,10 @@
 | 项目 | 详情 |
 | -------- | :-------: |
 | 开发硬件环境	| AMD Ryzen 5 3500U 2.10GHz 16.0GB内存 |
-| 运行软件环境 |	PC |
 | 操作系统	| Windows11家庭中文版 |
-| 开发环境与工具	| PyCharm Community Edition 2022.1.3;Qt Designer |
-| 编程语言	| python |
+| 开发环境与工具	| PyCharm Community Edition 2022.1.3;pyQt5 |
+| 编程语言	| python 3.11 |
+| 框架 | word2vec-textCNN |
 
 ### 3.2 系统操作说明
 #### 3.2.1 登录模块说明
