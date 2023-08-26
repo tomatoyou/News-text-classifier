@@ -3,23 +3,17 @@
 1.2新闻文本分词  
 1.3新闻主题提取  
 1.4按标签进行归类  
-## 2 环境与配置
-### 2.1 开发硬件环境  
-AMD Ryzen 5 3500U 2.10GHz 16.0GB内存
-### 2.2 操作系统  
-Windows11家庭中文版  
-### 2.3 开发环境与工具  
-PyCharm Community Edition 2022.1.3;Qt Designer
+## 2 算法介绍
 ## 3 系统使用说明
 本系统使用python语言开发，使用pyqt5程序包设计系统界面，利用MySQLWorkbench连接数据库，最后使用pyinstaller将程序打包。
 ### 3.1 系统运行环境和配置
-表 18 运行配置与环境
-项目	详情
-开发硬件环境	AMD Ryzen 5 3500U 2.10GHz 16.0GB内存
-运行软件环境 	PC
-操作系统	Windows11家庭中文版
-开发环境与工具	PyCharm Community Edition 2022.1.3;Qt Designer
-编程语言	python
+| 项目 | 详情 |
+| -------- | :-------: |
+| 开发硬件环境	| AMD Ryzen 5 3500U 2.10GHz 16.0GB内存 |
+| 运行软件环境 |	PC |
+| 操作系统	| Windows11家庭中文版 |
+| 开发环境与工具	| PyCharm Community Edition 2022.1.3;Qt Designer |
+| 编程语言	| python |
 
 ### 3.2 系统操作说明
 #### 3.2.1 登录模块说明
