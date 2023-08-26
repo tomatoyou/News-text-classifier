@@ -1,1 +1,0 @@
-SELECT * FROM text_classifier.user;
