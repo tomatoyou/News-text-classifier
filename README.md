@@ -2,7 +2,7 @@
 ## 1 目录
 ├─chart  
 │  ├─procedure chart：设计流图  
-│  └─screenshot：运行截图 
+│  └─screenshot：运行截图  
 ├─code  
 │  ├─databases  
 │  ├─input：训练数据和预测数据  
