@@ -12,9 +12,14 @@
 ├─document：设计文档  
 └─references  
 ## 2 算法介绍
+### 2.1 textCNN
+textCNN（文本卷积神经网络）本质也是卷积神经网络，在处理一个句子的时候，将单词的词向量按顺序拼接成一个矩阵（矩阵的行数对应句子的单词数量，列数为词向量的维度），类似图片的像素矩阵。然后使用不同尺寸的卷积核来在句子的词向量矩阵上进行卷积操作，每个卷积核会捕捉一种局部特征。然后通过池化层降低维度，保留关键特征，最后通过全连接层完成最终的类别划分。  
+
 <img src="https://github.com/tomatoyou/News-text-classifier/blob/main/chart/textCNN%E7%BB%93%E6%9E%84.png" alt="替代文本" width="700px">
 
+### 2.2 训练过程
 <img src="https://github.com/tomatoyou/News-text-classifier/blob/main/chart/procedure%20chart/textCNN.png" alt="替代文本" width="500px">  
+
 将数据进行预处理（分词，去停用词，去非中文）后，使用预训练的词典，将单词矩阵（一行是一个句子）转换成单词索引矩阵，训练数据一共180000条，将所有文本长度补齐至12个单词长度。按照batch_size = 64划分批次，通过embeding层将每一个单词映射成64维向量，使用unsqueeze函数添加一个维度以进行卷积操作。分别使用H = 3, 4, 5三种尺寸的卷积核进行卷积操作（卷积核宽度等于词向量的维度），并通过relu函数激活，然后最大池化降维。最后通过全连接层和softmax层映射到10个class。
 以下是卷积层输出的维度计算。
 
