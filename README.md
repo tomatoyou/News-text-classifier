@@ -14,7 +14,11 @@
 ## 2 算法介绍
 <img src="https://github.com/tomatoyou/News-text-classifier/blob/main/chart/textCNN%E7%BB%93%E6%9E%84.png" alt="替代文本" width="700px">
 
-<img src="https://github.com/tomatoyou/News-text-classifier/blob/main/chart/procedure%20chart/textCNN.png" alt="替代文本" width="700px">
+<img src="https://github.com/tomatoyou/News-text-classifier/blob/main/chart/procedure%20chart/textCNN.png" alt="替代文本" width="500px">  
+将数据进行预处理（分词，去停用词，去非中文）后，使用预训练的词典，将单词矩阵（一行是一个句子）转换成单词索引矩阵，训练数据一共180000条，将所有文本长度补齐至12个单词长度。按照batch_size = 64划分批次，通过embeding层将每一个单词映射成64维向量，使用unsqueeze函数添加一个维度以进行卷积操作。分别使用H = 3, 4, 5三种尺寸的卷积核进行卷积操作（卷积核宽度等于词向量的维度），并通过relu函数激活，然后最大池化降维。最后通过全连接层和softmax层映射到10个class。
+以下是卷积层输出的维度计算。
+
+<img src="https://github.com/tomatoyou/News-text-classifier/blob/main/chart/%E5%8D%B7%E7%A7%AF%E5%B1%82%E8%BE%93%E5%87%BA.png" alt="替代文本" width="700px">
 
 ## 3 系统使用说明
 本系统使用python语言开发，使用pyqt5程序包设计系统界面，利用MySQLWorkbench连接数据库。
