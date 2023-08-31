@@ -12,6 +12,7 @@
 ├─document：设计文档  
 └─references  
 ## 2 算法介绍
+
 ## 3 系统使用说明
 本系统使用python语言开发，使用pyqt5程序包设计系统界面，利用MySQLWorkbench连接数据库，最后使用pyinstaller将程序打包。
 ### 3.1 系统运行环境和配置
