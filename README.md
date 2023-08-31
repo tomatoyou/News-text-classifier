@@ -18,7 +18,7 @@
 | 操作系统	| Windows11家庭中文版 |
 | 开发环境与工具	| PyCharm Community Edition 2022.1.3;pyQt5 |
 | 编程语言	| python 3.11 |
-| 框架 | word2vec-textCNN |
+| 模型 | textCNN |
 
 ### 3.2 系统操作说明
 #### 3.2.1 登录模块说明
