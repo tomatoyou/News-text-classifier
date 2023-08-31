@@ -8,7 +8,7 @@
 │  ├─input：训练数据和预测数据  
 │  ├─model_and_dict：模型和词典  
 │  ├─output：textCNN的输出  
-│  └─temp_and_file：软件运行时所需的文件以及输出文件 
+│  └─temp_and_file：软件运行时所需的文件以及输出文件  
 ├─document：设计文档  
 └─references  
 ## 2 算法介绍
