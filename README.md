@@ -12,6 +12,9 @@
 ├─document：设计文档  
 └─references  
 ## 2 算法介绍
+<img src="https://github.com/tomatoyou/News-text-classifier/blob/main/chart/textCNN%E7%BB%93%E6%9E%84.png" alt="替代文本" width="700px">
+
+<img src="https://github.com/tomatoyou/News-text-classifier/blob/main/chart/procedure%20chart/textCNN.png" alt="替代文本" width="700px">
 
 ## 3 系统使用说明
 本系统使用python语言开发，使用pyqt5程序包设计系统界面，利用MySQLWorkbench连接数据库。
