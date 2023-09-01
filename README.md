@@ -14,6 +14,7 @@
 ## 2 算法介绍
 ### 2.1 TextCNN
 TextCNN（文本卷积神经网络）本质也是卷积神经网络，在处理一个句子的时候，将单词的词向量按顺序拼接成一个矩阵（矩阵的行数对应句子的单词数量，列数为词向量的维度），类似图片的像素矩阵。然后使用不同尺寸的卷积核来在句子的词向量矩阵上进行卷积操作，每个卷积核会捕捉一种局部特征。然后通过池化层降低维度，保留关键特征，最后通过全连接层完成最终的类别划分。  
+详细内容请参考：https://arxiv.org/abs/1408.5882  
 
 <img src="https://github.com/tomatoyou/News-text-classifier/blob/main/chart/textCNN%E7%BB%93%E6%9E%84.png" alt="替代文本" width="700px">
 
